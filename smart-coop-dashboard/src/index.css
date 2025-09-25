@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom Color Scheme */
+:root {
+  --primary-blue: #077BFF;
+  --primary-gold: #FFD700;
+}
+
+/* Custom utility classes for new color scheme */
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+}
+
+.bg-primary-gold {
+  background-color: var(--primary-gold);
+}
+
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+
+.text-primary-gold {
+  color: var(--primary-gold);
+}
+
+.border-primary-blue {
+  border-color: var(--primary-blue);
+}
+
+.border-primary-gold {
+  border-color: var(--primary-gold);
+}
+
+.hover\:bg-primary-blue:hover {
+  background-color: var(--primary-blue);
+}
+
+.hover\:bg-primary-gold:hover {
+  background-color: var(--primary-gold);
+}
+
+.hover\:text-primary-blue:hover {
+  color: var(--primary-blue);
+}
+
+.hover\:text-primary-gold:hover {
+  color: var(--primary-gold);
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225) rgb(241 245 249);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgb(241 245 249);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgb(203 213 225);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgb(148 163 184);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for mobile */
+@media (max-width: 768px) {
+  .scrollbar-thin {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    display: none;
+  }
+}
